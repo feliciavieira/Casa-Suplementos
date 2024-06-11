@@ -1,0 +1,11 @@
+O objetivo deste projeto foi criar o melhor site possível com o conhecimento que adquiri no meu primeiro semestre de faculdade, onde estou cursando Engenharia de Software. Durante esse período, recebemos um desafio de criar um site utilizando nossa criatividade e o que aprendemos até então. Escolhi desenvolver algo que uso diariamente: suplementos.
+
+Para construir o site, quis deixá-lo como um "mostruário". O objetivo é mostrar o que o anunciante tem em estoque, evitando que o cliente precise enviar mensagens e esperar por uma resposta. A ideia é que, ao conferir os produtos disponíveis, o cliente encontre no final da página um link para o WhatsApp, onde poderá informar sua compra diretamente a um especialista.
+
+Além disso, incluí algumas histórias fictícias sobre a criação dos produtos e desenvolvi uma identidade visual para ilustrar cada um deles, de acordo com sua gramatura.
+
+No rodapé da página, adicionei links para redes sociais, uma caixa de mensagens e um menu adicional para facilitar a navegação para outras seções do site.
+
+Utilizei HTML5 , CSS e JavaScript nesse código.
+
+O código foi desenvolvido no replit.com
