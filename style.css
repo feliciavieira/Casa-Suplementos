@@ -1,0 +1,596 @@
+/*FONTES*/
+:root {
+  --tg-body-font-family: 'Poppins', sans-serif;
+  --tg-heading-font-family: 'Paytone One', sans-serif;
+  --tg-pacifico-font-family: 'Pacifico', cursive;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*FIM DE FONTES*/
+
+
+
+/*---------------------------------INCIO CSS--------------------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+
+}
+
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .logo h1{ 
+  font-family: 'Kanit';
+}*/
+
+.logo img{
+  align-items: center;
+  max-width: 300px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu li { 
+  margin-right: 20px;
+
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Arial';
+}
+
+#navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav#navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+nav#navbar li {
+  margin-right: 1rem;
+}
+
+.menu li a {
+  padding: 10px;
+  color: black;
+}
+
+.menu li a:hover {
+  border-radius: 7px;
+  background: #e9d390;
+  transition: 0.7s;
+  color: black;
+}
+
+/*FECHAMENTO NAV*/
+
+
+
+
+
+
+
+/* HEADER*/
+
+header {
+  background-color: #D0A933;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-family: 'Righteous';
+  font-size: 44px;
+  color: white;
+  text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6)
+}
+
+header:hover {
+  background-color: #ededed;
+  transition: 2s;
+}
+
+header .cta-button {
+  text-shadow: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .4;
+  content: "";
+  z-index: -1;
+
+  background-position: center center;
+  background-size: cover;
+}
+
+/*FONTE DO GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
+
+.the-title {
+
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: 'Amita';
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+
+}
+
+.the-title span {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1.3;
+}
+
+.the-title em {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.box-header .the-title {
+
+  text-align: center;
+  padding-bottom: 5px;
+
+}
+
+.box-header .the-title:before {
+
+    width: 40px;
+    height: 8px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -20px;
+    background-color: #ffcc02;
+
+}
+
+.box-header .the-title:after {
+
+    width: 130px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    margin-left: -65px;
+    background-color: #ffcc02;
+
+}
+/* FECHAMENTO HEADER*/
+
+
+
+
+
+/*BOTÃO 'MONTE SEU KIT CONOSCO'*/
+.cta-button {
+  display: inline-block;
+  background-color: #D0A933;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cta-button:hover {
+  background: #D0A933;
+
+}
+/*FECHAMENTO BOTÃO 'MONTE SEU KIT CONOSCO'*/
+
+#sobre,
+#produtos,
+#contato {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.col-6 {
+  width: 50%;
+  flex: 0 0 auto;
+}
+
+.col-6.produto {
+  width: 40%;
+}
+
+html #produtos .items {
+  width: 100%;
+  justify-content: center;
+}
+
+.historia-descricao,
+#produtos .items,
+.contato-items {
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding-top: 50px;
+}
+
+.historia-img {
+  width: 120%;
+  border-image: auto;
+  height: auto;
+  margin-bottom: 9px;
+}
+
+section#inicio,
+section#sobre,
+footer {
+  background: #000000;
+}
+
+.historia-descricao h3{
+  color: #D0A933;
+  font-family: 'Kanit';
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.historia-descricao p {
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+}
+
+.btn_cardapio {
+  margin: auto;
+  font-family: 'Kanit';
+  margin-bottom: 2rem;
+}
+.produto-descricao h2{
+  font-family: 'Kanit';
+}
+
+.produto-descricao p {
+  text-align: justify;
+  font-family: 'Arial';
+}
+
+.produto-descricao h2 {
+  text-align: center;
+}
+
+#parallax:hover {
+  transform: rotate(62deg);
+}
+
+#parallax {
+  transition: transform 0.5s;
+}
+
+.col-6.produto img {
+  width: 100%;
+}
+
+.col-6.produto .produto-img {
+  width: 154px;
+  flex: 0 0 auto;
+  margin-right: 25px
+}
+
+.col-6.produto .produto-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.col-6.produto {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  padding: 40px 35px;
+  margin: 30px;
+  border: 1px solid #fff;
+  min-height: 185px;
+
+}
+.col-6.produto:not(:hover){
+  transition: 0.2s ease;
+}
+.col-6.produto:hover {
+  transition: 0.2s ease;
+  box-shadow: 13px 17px 3px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e9b1b1;
+  transform: scale(1.05, 1.05);
+}
+
+section #produtos {
+  background-color: white;
+}
+
+.produto-info {
+  width: 85%;
+}
+
+
+
+
+/* RODAPÉ */
+
+.footer{
+
+  background-color: #ffffff;
+  width: 100%;
+  height:100%;
+  float: left;
+  font-size: 18px;
+  padding: 50px 10px 50px 10px;
+
+}
+
+.footer .left{ 
+
+  width:100%; 
+  float:left; 
+  border-bottom:1px #b2aeae solid;
+  border-right:0; 
+  margin-bottom:20px; 
+    padding-bottom:20px;
+}
+
+.footer .title-footer {
+
+  color: #000000;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: initial;
+    font-size:26px;
+    width:100%;
+    float:left;
+    margin-bottom:15px;
+
+}
+
+.footer .title-footer span{
+
+  color:  #D0A933;
+  font-family:'DM Sans', sans-serif;
+  font-weight: bold;
+
+}
+
+/* LINKS*/
+
+.footer .links{
+
+  width: 100%;
+  float: left;
+  color:  #000000;
+  margin-bottom: 20px;
+  padding: 0;
+
+}
+
+.footer .links a{
+
+    display: block;
+    line-height: 33px;
+    text-decoration: none;
+    color: #000000;
+    font-family:'DM Sans', sans-serif;
+    font-size:16px;
+    transition:0.3s;
+
+
+}
+
+.footer .links a:hover { color:#D0A933; }
+
+.footer .Copyright{
+
+  font-family:'DM Sans', sans-serif;
+  color:  #000000;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px;
+
+}
+
+/* REDE SOCIAIS*/
+
+.footer .footer-icons{
+
+  width:100%;
+  float:left;
+  margin-bottom:20px;
+}
+
+.footer .footer-icons a{
+
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #b2aeae;
+  border-radius: 50px;
+    font-family:'DM Sans', sans-serif;
+  font-size: 20px;
+  color: #ede8e8;
+  text-align: center;	
+  line-height: 35px;
+  margin-bottom: 5px;
+  transition:0.3s;
+
+}
+
+.footer .footer-icons a:hover{ background-color:#D0A933; }
+
+/*DIREITA*/
+
+.footer .right   { width:100%; float:left; }
+.footer .right p {
+
+  font-family: 'DM Sans', sans-serif;
+  font-weight: initial;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 30px;
+  color: #ffffff;
+
+}
+
+/*FORMULÁRIO*/
+
+.footer form { width:100%; float:left; }
+
+.footer form input,
+.footer form textarea{
+
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color:  #b2aeae;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+    outline: none;
+  font: inherit;
+  font-size: 14px;
+  font-family:'DM Sans', sans-serif;
+  font-weight: normal;
+  color:  #ffffff;
+  width: 100%;
+  padding: 18px;
+
+}
+
+.footer ::-webkit-input-placeholder {
+  color:  #000000;
+}
+
+.footer ::-moz-placeholder {
+  color:  #030303;
+  opacity: 1;
+}
+
+.footer :-ms-input-placeholder{
+  color:  #000000;
+}
+
+
+.footer form input{
+
+  width: 100%;
+  height: 55px;
+  float: left;
+  margin-bottom: 15px;
+
+}
+
+.footer form textarea{
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footer form .btn{
+
+  border-radius: 3px;
+  background-color:  #b2aeae;
+  color: #030303;
+  border: 0;
+  padding: 15px 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  float: left;
+  cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.footer form .btn:hover { background-color:  #000000; }
+
+/*FECHAMENTO RODAPÉ*/
